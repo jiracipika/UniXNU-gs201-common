@@ -1,0 +1,14 @@
+"schema_version" = 2
+
+["soc"]
+"name" = "gs201"
+"description" = "Google Tensor G2 (gs201), Samsung Exynos-class, Google Pixel 7/7 Pro"
+# Hardware data sources: the stock factory device trees (rango BP4A.251205.006,
+# decoded to DTBs and verified against silicon observation on panther), Google's
+# gs201 SoC kernel sources, and the linux-omarchy gs201 tree that ran panthor
+# on this silicon. Driver sources ported into UniXNU are checked against all three.
+"source_repository" = "https://android.googlesource.com/kernel/google-modules/soc/gs"
+"source_revision" = "android-gs-raviole-5.10-android15-qpr1"
+
+["components"]
+"include" = ["ArmCpu", "ArmDTPlatform"]
